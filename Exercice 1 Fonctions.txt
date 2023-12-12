@@ -1,4 +1,6 @@
-Variables : mot:chaîne de caractére count:num
+Variables : 
+mot: chaîne de caractére 
+count: num
 Début
     count = 0
     demander ("quel est votre mot")
