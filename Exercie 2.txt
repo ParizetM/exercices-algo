@@ -1,13 +1,13 @@
 Variables 
 mot: chaîne de caractere 
 sortie: Bool
-total_num : num
+total_num,tableau_num : num
+
 
 Debut
     sortie = Faux
     total_num = 0
     i = 0
-    tableau_num = []
     while sortie != Vrai
         demander("Donnez un mot :")
         recuperer(mot)
@@ -17,7 +17,9 @@ Debut
             sortie = Vrai
         sinon
             sortie = Faux
-            afficher(tableau_num)
+            pour i allant de 0 a i
+                afficher(tableau_num[i])
+            fin pour
         fin si
     fin while
 
