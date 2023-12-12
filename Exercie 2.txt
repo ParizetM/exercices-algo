@@ -6,21 +6,24 @@ total_num : num
 Debut
     sortie = Faux
     total_num = 0
+    i = 0
+    tableau_num = []
     while sortie != Vrai
         demander("Donnez un mot :")
         recuperer(mot)
-        total_num += compter_cara(mot)
+        tableau_num[i] = compter_cara(mot)
+        i += 1
         Si minuscule(mot) == "Stop" alors
             sortie = Vrai
         sinon
             sortie = Faux
-            afficher(total_num)
+            afficher(tableau_num)
         fin si
     fin while
 
     fonction compter_cara (chaîne de caractere mot) : num
         Variable : nb: num 
-        nb = nombre de caractere de mot
+         nb = nombre de caractere de mot
         retourner nb
     fin fonction
 Fin
