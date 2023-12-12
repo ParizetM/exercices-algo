@@ -7,14 +7,14 @@ Debut
     while sortie != Vrai
         demander("Donnez un mot :")
         recuperer(mot)
-        Si mot == "Stop" ou mot == "stop" ou mot == "STOP" alors
+        Si minuscule(mot) == "Stop" alors
             sortie = Vrai
         sinon
             sortie = Faux
             afficher(compter_cara(mot))
         fin si
     fin while
-    
+
     fonction compter_cara (chaîne de caractere mot) : num
         Variable : nb: num 
         nb = nombre de caractere de mot
