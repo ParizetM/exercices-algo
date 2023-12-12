@@ -14,7 +14,7 @@ Debut
 
         si nombre == 0 alors
             sortie = Faux
-            afficher("fin de programme le nombre est egal a 0")
+            afficher("le nombre ne peut pas etre egal a 0")
 
         sinon
             T_nb[c_T_nb] = nombre
