@@ -1,14 +1,13 @@
 Variables 
-mot: chaîne de caractére 
-nb: num 
+mot: chaîne de caractere 
 sortie: Bool
 
-Début
+Debut
     nb = 0
     sortie = Faux
     while sortie != Vrai
         demander("Donnez un mot :")
-        récupérer(mot)
+        recuperer(mot)
         Si mot == "Stop" ou mot == "stop" ou mot == "STOP" alors
             sortie = Vrai
         sinon
@@ -17,6 +16,7 @@ Début
         fin si
     fin while
     fonction compter_cara (chaîne de caractere mot) : num
+        Variable : nb: num 
         nb = nombre de caractere de mot
         retourner nb
     fin fonction
