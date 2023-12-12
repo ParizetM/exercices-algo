@@ -1,17 +1,20 @@
 Variables 
 mot: chaîne de caractere 
 sortie: Bool
+total_num : num
 
 Debut
     sortie = Faux
+    total_num = 0
     while sortie != Vrai
         demander("Donnez un mot :")
         recuperer(mot)
+        total_num += compter_cara(mot)
         Si minuscule(mot) == "Stop" alors
             sortie = Vrai
         sinon
             sortie = Faux
-            afficher(compter_cara(mot))
+            afficher(total_num)
         fin si
     fin while
 
