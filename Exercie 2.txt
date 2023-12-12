@@ -6,7 +6,6 @@ total_num,tableau_num : num
 
 Debut
     sortie = Faux
-    total_num = 0
     i = 0
     while sortie != Vrai
         demander("Donnez un mot :")

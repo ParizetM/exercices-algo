@@ -1,5 +1,5 @@
-Variables : nombre, c_T_nb, somme_total, index_1, index_2: num
-T_nb : Tableau
+Variables : nombre, i, T_nb, somme_total, index_1, index_2: num
+
 
 Debut
     somme_total = 0
@@ -17,8 +17,8 @@ Debut
             afficher("le nombre ne peut pas etre egal a 0")
 
         sinon
-            T_nb[c_T_nb] = nombre
-            c_T_nb += 1
+            T_nb[i] = nombre
+            i += 1
             somme_total = ftn_somme(somme_total,nombre)
 
             si somme_total >= 100 alors
