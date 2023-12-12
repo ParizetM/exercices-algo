@@ -1,0 +1,38 @@
+Variables : nombre, c_T_nb, somme_total, index_1, index_2: num
+T_nb : Tableau
+
+Debut
+    somme_total = 0
+
+    fonction ftn_somme (num nb1,num nb2) : num
+        retourner (nb1 + nb2)
+    fin fonction
+
+    while sortie != Vrai
+        demander("donnez un nombre")
+        recuperer(nombre)
+
+        si nombre == 0 alors
+            sortie = Faux
+            afficher("fin de programme le nombre est egal a 0")
+
+        sinon
+            T_nb[c_T_nb] = nombre
+            c_T_nb += 1
+            somme_total = ftn_somme(somme_total,nombre)
+
+            si somme_total >= 100 alors
+                sortie = Vrai
+                demander("donnez un premier chiffre d'index")
+                recuperer(index_1)
+                demander("donnez un second chiffre d'index")
+                recuperer(index_2)
+                afficher("la somme des nombres est :",ftn_somme(index_1,index_2))
+            fin si
+        fin si
+    fin while
+Fin
+
+
+
+
