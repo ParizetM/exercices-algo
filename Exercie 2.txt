@@ -1,0 +1,23 @@
+Variables 
+mot: chaîne de caractére 
+nb: num 
+sortie: Bool
+
+Début
+    nb = 0
+    sortie = Faux
+    while sortie != Vrai
+        demander("Donnez un mot :")
+        récupérer(mot)
+        Si mot == "Stop" ou mot == "stop" ou mot == "STOP" alors
+            sortie = Vrai
+        sinon
+            sortie = Faux
+            afficher(compter_cara(mot))
+        fin si
+    fin while
+    fonction compter_cara (chaîne de caractere mot) : num
+        nb = nombre de caractere de mot
+        retourner nb
+    fin fonction
+Fin
