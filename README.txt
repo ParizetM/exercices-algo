@@ -1,1 +1,1 @@
-ICI C LES EXO D'algo
+ALGO
