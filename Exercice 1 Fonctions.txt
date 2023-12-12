@@ -1,0 +1,18 @@
+Variables : mot:chaîne de caractére count:num
+Début
+    count = 0
+    demander ("quel est votre mot")
+    récupérer(mot)
+    fonction replace_star(chaîne de caractére mot) : chaîne de caractére
+        count = nombre de caractere de mot
+        mot = ""
+        while count > 0 
+            mot += "*"
+            count -= 1
+        fin while
+        retourner mot
+    Fin fonction
+    afficher(replace_star(mot))
+Fin
+    
+        
