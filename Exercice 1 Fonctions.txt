@@ -1,9 +1,6 @@
 Variables : 
 mot: chaîne de caractere 
 Debut
-    count = 0
-    demander ("quel est votre mot")
-    recuperer(mot)
     fonction replace_star(chaîne de caractere mot) : chaîne de caractere
         Variable : count: num
         count = nombre de caractere de mot
@@ -14,6 +11,9 @@ Debut
         fin while
         retourner mot
     Fin fonction
+    
+    demander ("quel est votre mot")
+    recuperer(mot)
     afficher(replace_star(mot))
 Fin
     
